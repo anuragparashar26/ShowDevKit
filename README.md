@@ -1,7 +1,11 @@
 # ShowDevKit – Open Source Portfolio Template
 
 A modern, customizable personal portfolio website template to showcase your projects, skills, and experience. Built with clean HTML, CSS, and JavaScript.  
-**Live Demo:** [Click Here](https://showdevkit.netlify.app/)
+## **Live Demo:** [Click Here](https://showdevkit.netlify.app/)
+
+<div align="center">
+  <img src="/assets/demovid.gif" alt="ShowDevKit Demo" width="100%" />
+</div>
 
 ---
 
