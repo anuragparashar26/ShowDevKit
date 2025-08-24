@@ -4,7 +4,7 @@ A modern, customizable personal portfolio website template to showcase your proj
 ## **Live Demo:** [Click Here](https://showdevkit.netlify.app/)
 
 <div align="center">
-  <img src="/assets/demovid.gif" alt="ShowDevKit Demo" width="100%" />
+  <img src="/assets/demo.gif" alt="ShowDevKit Demo" width="100%" />
 </div>
 
 ---
