@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for responsive design and character encoding -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe's Portfolio</title>
+    <!-- Favicon and stylesheets -->
+    <link rel="icon" href="static/dp.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+</head>
+<body>
+    <!-- Header: Navigation bar and dark mode toggle -->
+    <header>
+    <div class="nav-links" id="navLinks">
+        <!-- Navigation items for different sections -->
+        <div class="nav-item">
+            <a href="#pg1" class="hide-link"><i class="fas fa-home"></i><span>Home</span></a>
+        </div>
+        <div class="nav-item">
+            <a href="#pg2" class="hide-link"><i class="fas fa-user"></i><span>About</span></a>
+        </div>
+        <div class="nav-item">
+            <a href="#pg3" class="hide-link"><i class="fas fa-list-check"></i><span>Projects</span></a>
+        </div>
+        <div class="nav-item">
+            <a href="#pg4" class="hide-link"><i class="fas fa-award"></i><span>Certifications</span></a>
+        </div>
+        <div class="nav-item">
+            <a href="#pg5" class="hide-link"><i class="fas fa-envelope"></i><span>Contact</span></a>
+        </div>
+    </div>
+    <div class="dark-toggle">
+        <!-- Dark mode toggle button -->
+        <i id="darkModeToggle" class="fas fa-moon"></i>
+    </div>
+</header>
+
+    <!-- Hero Section (Landing) -->
+    <div class="pg1" id="pg1">
+        <!-- Light/Dark mode animation container -->
+        <div class="hero-animation"></div>
+        <div class="title">
+                <b>Hey, I am John Doe</b><span class="mobile-break0"></span>
+                <h2>Passionate about <span class="mobile-break"></span><span id="dynamicText"></span></h2>
+            </div>
+        </div>
+        <!-- Social media links (fixed left) -->
+        <div class="social-strip">
+            <a href="https://x.com/username" target="_blank"><img src="static/social-icons/x.jpg" alt="Twitter" class="social-icon"></a>
+            <a href="https://linkedin.com/in/username" target="_blank"><img src="static/social-icons/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+            <a href="https://peerlist.io/username" target="_blank"><img src="static/social-icons/peerlist.png" alt="Peerlist" class="social-icon"></a>
+            <a href="https://github.com/username" target="_blank"><img src="static/social-icons/github.png" alt="GitHub" class="social-icon"></a>
+            <a href="https://leetcode.com/username" target="_blank"><img src="static/social-icons/leetcode.png" alt="LeetCode" class="social-icon"></a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="pg2" id="pg2">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <div class="dash"></div>
+            <p class="section-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+        </div>
+    
+        <div class="about-section">
+            <div class="about-image" data-aos="zoom-in">
+                <img src="static/dp.png" alt="About Me" class="about-img">
+            </div>
+            <div class="about-text" data-aos="fade-up">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <br>
+                    <br>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. <br><br>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+                </p>
+                <div class="social-buttons" data-aos="zoom-in">
+                    <ul class="wrapper">
+                        <li class="icon twitter">
+                            <span class="tooltip">X</span>
+                            <a href="https://x.com/username" target="_blank" class="hide-link">
+                                <span><i class="fab fa-x-twitter"></i></span>
+                              </a>
+                          </li>
+                          <li class="icon linkedin">
+                            <span class="tooltip">LinkedIn</span>
+                            <a href="https://linkedin.com/in/username" target="_blank" class="hide-link">
+                                <span><i class="fab fa-linkedin"></i></span>
+                            </a>
+                        </li>
+                        <li class="icon peerlist">
+                            <span class="tooltip">Peerlist</span>
+                            <a href="https://peerlist.io/username" target="_blank" class="hide-link">
+                            <span><i class="fas fa-address-card"></i></span>
+                            </a>
+                        </li>
+                        <li class="icon github">
+                          <span class="tooltip">Github</span>
+                          <a href="https://www.github.com/username" target="_blank" class="hide-link">
+                            <span><i class="fab fa-github"></i></span>
+                          </a>
+                        </li>
+                        <li class="icon leetcode">
+                            <span class="tooltip">LeetCode</span>
+                            <a href="https://leetcode.com/username" target="_blank" class="hide-link">
+                                <span><i class="fas fa-code"></i></span>
+                            </a>
+                        </li>
+                      </ul>
+            
+                    <div class="contact-resume-buttons">
+                        <a href="https://sample-blog-link.com/" target="_blank" class="button blog-button">My Blog</a>
+                        <a href="#pg5" class="button contact-button">Contact</a>
+                        <a href="https://drive.google.com/file/d/sample-link" target="_blank" class="button resume-button">Resume</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Section Timeline -->
+    <div class="work-section" id="work">
+        <div class="section-header-work">
+            <h2>Work Experience</h2>
+            <div class="dash-project"></div>
+            <p class="work-section-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="static/certs-icons/icon.png" alt="Company 1">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <span class="timeline-company">Acme Corp</span>
+                        <span class="timeline-date">Jan 2023 - Present</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="static/certs-icons/icon.png" alt="Company 2">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Frontend Developer</h3>
+                        <span class="timeline-company">Beta Solutions</span>
+                        <span class="timeline-date">Jul 2021 - Dec 2022</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="static/certs-icons/icon.png" alt="Company 3">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Intern</h3>
+                        <span class="timeline-company">Gamma Tech</span>
+                        <span class="timeline-date">Jan 2021 - Jun 2021</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Work Section -->
+
+    <!-- Skills Section -->
+    <div class="skills-section" id="skills">
+        <div class="section-header">
+            <h2>Skills & Toolset</h2>
+            <div class="dash"></div>
+            <p class="section-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skills-grid" data-aos="fade-up">
+                <div class="skill-card" data-tooltip="C">
+                    <img src="https://skillicons.dev/icons?i=c" alt="C Logo">
+                    <span class="skill-name">C</span>
+                </div>
+                <div class="skill-card" data-tooltip="C++">
+                    <img src="https://skillicons.dev/icons?i=cpp" alt="C++ Logo">
+                    <span class="skill-name">C++</span>
+                </div>
+                <div class="skill-card" data-tooltip="Java">
+                    <img src="https://skillicons.dev/icons?i=java" alt="Java Logo">
+                    <span class="skill-name">Java</span>
+                </div>
+                <div class="skill-card" data-tooltip="Python">
+                    <img src="https://skillicons.dev/icons?i=py" alt="Python Logo">
+                    <span class="skill-name">Python</span>
+                </div>
+                <div class="skill-card" data-tooltip="HTML">
+                    <img src="https://skillicons.dev/icons?i=html" alt="HTML Logo">
+                    <span class="skill-name">HTML5</span>
+                </div>
+                <div class="skill-card" data-tooltip="CSS">
+                    <img src="https://skillicons.dev/icons?i=css" alt="CSS Logo">
+                    <span class="skill-name">CSS3</span>
+                </div>
+                <div class="skill-card" data-tooltip="JavaScript">
+                    <img src="https://skillicons.dev/icons?i=js" alt="javascript logo">
+                    <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-card" data-tooltip="TypeScript">
+                    <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript logo">
+                    <span class="skill-name">TypeScript</span>
+                </div>
+                <div class="skill-card" data-tooltip="React">
+                    <img src="https://skillicons.dev/icons?i=react" alt="React logo">
+                    <span class="skill-name">React</span>
+                </div>
+                <div class="skill-card" data-tooltip="TailwindCSS">
+                    <img src="https://skillicons.dev/icons?i=tailwind" alt="TailwindCSS logo">
+                    <span class="skill-name">Tailwind</span>
+                </div>
+                <div class="skill-card" data-tooltip="Node.js">
+                    <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js logo">
+                    <span class="skill-name">Node</span>
+                </div>
+                <div class="skill-card" data-tooltip="Express.js">
+                    <img src="https://skillicons.dev/icons?i=express" alt="Express.js logo">
+                    <span class="skill-name">Express</span>
+                </div>
+                <div class="skill-card" data-tooltip="MongoDB">
+                    <img src="https://skillicons.dev/icons?i=mongodb" alt="mongodb logo">
+                    <span class="skill-name">MongoDB</span>
+                </div>
+                <div class="skill-card" data-tooltip="mysql">
+                    <img src="https://skillicons.dev/icons?i=mysql" alt="mysql logo">
+                    <span class="skill-name">mysql</span>
+                </div>
+                <div class="skill-card" data-tooltip="git">
+                    <img src="https://skillicons.dev/icons?i=git" alt="git logo">
+                    <span class="skill-name">Git</span>
+                </div>
+                <div class="skill-card" data-tooltip="Figma">
+                    <img src="https://skillicons.dev/icons?i=figma" alt="figma logo">
+                    <span class="skill-name">Figma</span>
+                </div>
+                <div class="skill-card" data-tooltip="Linux">
+                    <img src="https://skillicons.dev/icons?i=linux" alt="linux logo">
+                    <span class="skill-name">Linux</span>
+                </div>
+                <div class="skill-card" data-tooltip="Docker">
+                    <img src="https://skillicons.dev/icons?i=docker" alt="Docker logo">
+                    <span class="skill-name">Docker</span>
+                </div>
+                <div class="skill-card" data-tooltip="Vercel">
+                    <img src="https://skillicons.dev/icons?i=vercel" alt="Vercel logo">
+                    <span class="skill-name">Vercel</span>
+                </div>
+                <div class="skill-card" data-tooltip="Canva">
+                    <img src="static/skills-icons/canva.png" alt="Canva logo" style="border-radius: 10px;">
+                    <span class="skill-name">Canva</span>
+                </div>
+                <div class="skill-card" data-tooltip="Render">
+                    <img src="static/skills-icons/render.jpg" alt="Render logo" style ="border-radius: 10px;">
+                    <span class="skill-name">Render</span>
+                </div>
+                <div class="skill-card" data-tooltip="Supabase">
+                    <img src="https://skillicons.dev/icons?i=supabase" alt="Supabase logo">
+                    <span class="skill-name">Supabase</span>
+                </div>
+                <div class="skill-card" data-tooltip="Jenkins">
+                    <img src="https://skillicons.dev/icons?i=jenkins" alt="Jenkins logo">
+                    <span class="skill-name">Jenkins</span>
+                </div>
+                <div class="skill-card" data-tooltip="Tableau">
+                    <img src="static/skills-icons/tableau.png" alt="=tableau logo" style="border-radius: 10px;">
+                    <span class="skill-name">Tableau</span>
+                </div>
+                <div class="skill-card" data-tooltip="Jupyter">
+                    <img src="static/skills-icons/jupyter.png" alt="Jupyter logo" style="border-radius: 10px;">
+                    <span class="skill-name">Jupyter</span>
+                </div>
+                <div class="skill-card" data-tooltip="Scikit-learn">
+                    <img src="https://skillicons.dev/icons?i=scikitlearn" alt="Scikit-learn logo">
+                    <span class="skill-name">sklearn</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contribution-section" data-aos="fade-up">
+            <div class="section-subheader">
+                <h3>Code Contributions</h3>
+                <p class="section-subdescription">My <strong>GitHub</strong> activity (Last 12 Months)</p>
+            </div>
+            
+            <div class="contribution-charts">
+                <div class="chart-container github-chart">
+                    <div class="chart-wrapper">
+                        <img src="https://ghchart.rshah.org/3139FB/anuragparashar26" 
+                             alt="GitHub Contribution Chart"
+                             width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+        
+    <!-- Projects Section -->
+    <div class="pg3" id="pg3"> 
+        <br><br>
+        <div class="section-header-project">
+            <h2>Projects</h2>
+            <div class="dash-project"></div>
+            <p class="project-section-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+        </div>
+        <div class="project-nav">
+            <button class="project-nav-btn active" id="webAppsBtn" onclick="showProjects('webapps')">Web Applications</button>
+            <button class="project-nav-btn" id="devToolsBtn" onclick="showProjects('devtools')">Developer Tools</button>
+            <button class="project-nav-btn" id="desktopAppsBtn" onclick="showProjects('desktopapps')">Desktop Applications</button>
+            <button class="project-nav-btn" id="utilityBtn" onclick="showProjects('utility')">Utility</button>
+        </div>
+        <br>
+        <div id="projects-container">
+            <!-- Web Applications -->
+            <div class="project-group webapps" data-aos="fade-up">
+                <div class="project-showcase">
+                    <div class="image-section" data-aos="fade-up-right">
+                      <img src="static/snaps/thumbnail.png" alt="snapshot" class="snapshot-image">
+                    </div>
+                    <div class="text-section" data-aos="fade-up">
+                      <h2 class="project-title">Sample Project 1
+                        <span class="project-status in-progress">
+                            <i class="status-icon fas fa-circle"></i>In Progress</span>
+                      </h2>
+                      <p class="project-description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes                      
+                        </p>
+                      <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                        <span class="tech-badge">VirusTotal API</span>
+                        <span class="tech-badge">Supabase</span>
+                        <span class="tech-badge">Render</span>
+                      </div>
+                        <div style="display: flex; gap: 12px; flex-wrap: wrap; width: 100%;">
+                            <a href="https://username.github.io/sample/" target="_blank" class="case-study-btn" style="flex: 1 1 150px; min-width: 120px; text-align: center;">JOIN WAITLIST</a>
+                            <a href="https://github.com/sample-link/" target="_blank" class="case-study-btn" style="flex: 1 1 150px; min-width: 120px; text-align: center;">GITHUB LINK</a>
+                        </div>         
+                    </div>
+                </div>
+                <div class="project-showcase">
+                    <div class="image-section" data-aos="fade-up-right">
+                      <img src="/static/snaps/thumbnail.png" alt="snapshot" class="snapshot-image">
+                    </div>
+                    <div class="text-section" data-aos="fade-up">
+                      <h2 class="project-title">Sample Project 2
+                        <span class="project-status live">
+                            <i class="status-icon fas fa-circle"></i>Live</span>
+                      </h2>
+                      <p class="project-description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes        
+                        </p>              
+                        <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">CSS</span>
+                      </div>
+                      <a href="https://github.com/sample-link" target="_blank" class="case-study-btn">GITHUB LINK</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Developer Tools -->
+            <div class="project-group devtools" style="display:none;" data-aos="fade-up">
+        
+                <div class="project-showcase">
+                    <div class="image-section" data-aos="fade-up-right">
+                      <img src="static/snaps/thumbnail.png" alt="snapshot" class="snapshot-image">
+                    </div>
+                    <div class="text-section" data-aos="fade-up">
+                      <h2 class="project-title">Sample Dev Tool
+                        <span class="project-status live">
+                            <i class="status-icon fas fa-circle"></i>Live</span>
+                      </h2>
+                      <p class="project-description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                      <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">TailwindCSS</span>
+                        <span class="tech-badge">Vercel</span>
+                      </div>
+                        <div style="display: flex; gap: 12px; flex-wrap: wrap; width: 100%;">
+                            <a href="#" target="_blank" class="case-study-btn" style="flex: 1 1 150px; min-width: 120px; text-align: center;">LIVE LINK</a>
+                            <a href="#" target="_blank" class="case-study-btn" style="flex: 1 1 150px; min-width: 120px; text-align: center;">GITHUB LINK</a>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <!-- Desktop Applications -->
+            <div class="project-group desktopapps" style="display:none;" data-aos="fade-up">
+                <div class="project-showcase">
+                    <div class="image-section" data-aos="fade-up-right">
+                      <img src="/static/snaps/thumbnail.png" alt="snapshot" class="snapshot-image">
+                    </div>
+                    <div class="text-section" data-aos="fade-up">
+                      <h2 class="project-title">Sample Desktop App
+                        <span class="project-status live">
+                            <i class="status-icon fas fa-circle"></i>Live</span>
+                      </h2>
+                      <p class="project-description">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+                      </p>
+                      <div class="tech-stack">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Swing</span>
+                        <span class="tech-badge">MongoDB</span>
+                      </div>
+                      <a href="#" target="_blank" class="case-study-btn">GITHUB LINK</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Utility -->
+            <div class="project-group utility" style="display:none;" data-aos="fade-up">
+                <div class="project-showcase">
+                    <div class="image-section" data-aos="fade-up-right">
+                      <img src="static/snaps/thumbnail.png" alt="snapshot" class="snapshot-image">
+                    </div>
+                    <div class="text-section"  data-aos="fade-up">
+                      <h2 class="project-title">Sample Tool
+                        <span class="project-status live">
+                            <i class="status-icon fas fa-circle"></i>Live</span>
+                      </h2>
+                      <p class="project-description">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+                      </p>
+                      <div class="tech-stack">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                      </div>
+                         <div style="display: flex; gap: 12px; flex-wrap: wrap; width: 100%;">
+                            <a href="#" target="_blank" class="case-study-btn" style="flex: 1 1 150px; min-width: 120px; text-align: center;">LIVE LINK</a>
+                            <a href="#" target="_blank" class="case-study-btn" style="flex: 1 1 150px; min-width: 120px; text-align: center;">GITHUB LINK</a>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Certifications Section -->
+    <div class="pg4" id="pg4"> 
+        <br><br>
+        <div class="section-header">
+            <h2>Certifications</h2>
+            <div class="dash"></div>
+            <p class="section-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+        </div>
+        <br>
+        <section id="certs">
+            <div class="certs-grid">
+              <div class="certs-card" data-aos="fade-up">
+                <div class="cert-image">
+                    <img src="static/certs-icons/icon.png" alt="Sample Cert 1" class="cert-image">
+                </div>
+                <br>
+                <h3 class="cert-title">Sample Cert</h3>
+                <h4>
+                    by <b>Google</b> <br>
+                    <b>Issued</b> Oct,2024 <br>
+                    <b>Credential ID</b> OISOIUHFOF
+                </h4>
+                <p class="cert-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                <a href="#" class="cert-link" target="_blank">View Certification</a>
+              </div>
+              <div class="certs-card" data-aos="fade-up">
+                <div class="cert-image">
+                    <img src="static/certs-icons/icon.png" alt="Sample Cert 2" class="cert-image">
+                </div>
+                <br>
+                <h3 class="cert-title">Sample Cert 2</h3>
+                <h4>
+                    by <b>Microsoft</b> <br>
+                    <b>Issued</b> Jun,2024 <br>
+                    <b>Credential ID</b> NHIWSUDHFIWG
+                </h4>
+                <p class="cert-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                <a href="#" class="cert-link" target="_blank">View Certification</a>
+              </div>
+              <div class="certs-card" data-aos="fade-up">
+                <div class="cert-image">
+                    <img src="static/certs-icons/icon.png" width="50px" alt="Sample Cert 3" class="cert-image">
+                </div>
+                <br>
+                <h3 class="cert-title">Sample Cert 3</h3>
+                <h4>
+                    by <b>PhonePe</b> <br>
+                    <b>Issued</b> Feb,2024 <br>
+                    <b>Credential ID</b> dsakln
+                </h4>
+                <p class="cert-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                <a href="#" class="cert-link">View Certification</a>
+              </div>
+            </div>
+          </section>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="pg5" id="pg5">
+        <div class="contact-form-container">
+            <div class="section-header-contact">
+                <h2>Contact Me</h2>
+                <div class="dash"></div>
+                <p class="section-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+            </div>
+            
+            <form action="https://formspree.io/f/your-id" method="POST" id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required minlength="3">
+              
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" maxlength="50">
+              
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required minlength="10"></textarea>
+              
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="powered-by">
+                <span>Powered by Formspree</span>
+                <a href="https://formspree.io" target="_blank" rel="noopener noreferrer" class="formspree-logo">
+                    <div class="line long"></div>
+                    <div class="line long"></div>
+                    <div class="line short"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            
+            <div class="copyright-text">
+                © 2025 Designed & Developed by <a href="https://anuragparashar.tech/" target="_blank" class="hide-link"><u>Anurag Parashar</u></a><br>
+            </div> 
+        </div>
+    <div class="social-links" >
+        <a href="https://x.com/username" target="_blank" class="hide-link">
+            <img src="static/social-icons/x.jpg" alt="X">
+        </a>
+        <a href="https://linkedin.com/in/username" target="_blank" class="hide-link">
+            <img src="static/social-icons/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://peerlist.io/username" target="_blank" class="hide-link">
+            <img src="static/social-icons/peerlist.png" alt="Peerlist" style="height: 49px;">
+        </a>
+        <a href="https://github.com/username" target="_blank" class="hide-link">
+            <img src="static/social-icons/github.png" style="height: fit-content; margin-bottom: 2px;" alt="GitHub">
+        </a>
+        <a href="https://leetcode.com/username" target="_blank" class="hide-link">
+            <img src="static/social-icons/leetcode.png" alt="Leetcode">
+        </a>
+    </div>
+</footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+</body>
+</html>
